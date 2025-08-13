@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Testing Website</title>
+	<style type="text/css">
+		body{
+			height: 100vh;
+			background: linear-gradient(skyblue, blue, purple, skyblue);
+			font-family: sans-serif;
+			color: white;
+		}
+		.website-container{
+			text-align: center;
+		}
+		.element-box{
+			border: solid 4px;
+			width: 50%;
+			margin-left: 25%;
+			border-radius: 40px;
+			font-size: 13px;
+		}
+		.css-button{
+			background: linear-gradient(blue, purple);
+			border-radius: 20px;
+			color: white;
+		}
+		.img{
+			border-radius: 20px;
+		}
+		.js-button{
+			background: linear-gradient(yellow, orange);
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function tstbtn() {
+			alert('This is an alert message.')
+		}
+	</script>
+</head>
+<body>
+	<div class="website-container">
+	    <h1>Testing Website!</h1>
+	    <h2>Headers</h2>
+	    <div class="element-box">
+	    	<h1>Header 1</h1>
+	    	<h2>Header 2</h2>
+	    	<h3>Header 3</h3>
+	    	<h1>And all the way to Header 6.</h1>
+	    </div>
+	    <h2>Images</h2>
+	    <div class="element-box">
+	    	<h2>Image Box</h2>
+	    	<img src="img.png" alt="An image" width="50%" class="img">
+	    	<p>An testing image.</p>
+	    </div>
+	    <h2>Buttons</h2>
+	    <div class="element-box">
+	    	<br>
+	    	<button>Regular button</button>
+	    	<button class="css-button">CSS-styled button</button>
+	    	<br> <br>
+	    	<button onclick="tstbtn()" class="js-button">JS-scripted button</button>
+	    	<button class="css-button">
+	    		<a href="img.png" download>Download button</a>
+	    	</button>
+	    	<p>These buttons are made using the "button" attribute.</p>
+	    	<p><i>The "hyperlink" button will be in the Hyperlink Section.</i></p>
+	    </div>
+	    <h2>Hyperlink ("a" attribute)</h2>
+	    <div class="element-box">
+	    	<br>
+	    	<a href="">Regular hyperlink</a>
+	    	<br> <br>
+	    	<button class="css-button"><a href="">Button Hyperlink</a></button>
+	    	<p>As you can see, the hyperlink is different from the usual hyperlink. The underline is not visible, using CSS.</p>
+	    </div>
+	    <h2>Audio, and Video</h2>
+	    <div class="element-box">
+	    	<p>Audio</p>
+	    	<audio controls>
+	    		<source src="Big Boing.wav" type="audio/wav">
+	    	</audio>
+	    	<hr>
+	    	<p>Video</p>
+	    	<video controls="controls" autoplay="autoplay" width="50%" height="25%">
+	    		<source src="AAA.mp4" type="video/mp4">
+	    		how does your browser not support the video element
+	    	</video>
+	    	<p>Both audio and video are made using the "source" attribute.</p>
+	    </div>
+	    <br>
+	    <div class="element-box">
+	        <h2>How this website was made</h2>
+	        <p>This website was made using</p>
+	        <p>GitHub Pages.</p>
+	    </div>
+	    <br>
+	    <br>
+	</div>
+</body>
+</html>
